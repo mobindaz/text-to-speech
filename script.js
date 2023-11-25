@@ -1,13 +1,13 @@
 function playText() {
     const inputText = document.getElementById('inputText').value;
-    const audio = new Audio(`https://api.voicerss.org/?key=YOUR_API_KEY&hl=en-us&src=${encodeURIComponent(inputText)}`);
+    const audio = new Audio(`https://api.voicerss.org/?key=e322aba026494fb798c6bbae5a645328&hl=en-us&src=${encodeURIComponent(inputText)}`);
     audio.play();
     document.getElementById('audio').src = audio.src;
 }
 
 function downloadAudio() {
     const inputText = document.getElementById('inputText').value;
-    const audio = new Audio(`https://api.voicerss.org/?key=YOUR_API_KEY&hl=en-us&src=${encodeURIComponent(inputText)}`);
+    const audio = new Audio(`https://api.voicerss.org/?key=e322aba026494fb798c6bbae5a645328&hl=en-us&src=${encodeURIComponent(inputText)}`);
     const blob = new Blob([inputText], { type: 'audio/mpeg' });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
